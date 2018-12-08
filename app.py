@@ -30,6 +30,10 @@ def instagramsuggestions():
 def contact():
     return render_template('contact.html')
 
+@app.route("/bbcfood", methods=['GET', 'POST'])
+def bbcfood():
+	return render_template('bbcfood.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
   

@@ -32,9 +32,9 @@ def instagramsuggestions():
 def contact():
     return render_template('contact.html')
 
-#@app.route("/bbcfood", methods=['GET', 'POST'])
-#def bbcfood():
-#	return render_template('bbcfood.html')
+@app.route("/bbcfood", methods=['GET', 'POST'])
+def bbcfood():
+	return render_template('bbcfood.html')
 
 
 required = urllib2.Request('http://www.food2fork.com/api/search?key=5b7660d0e7091a482b64648127a8c732&q=chicken%20breast&page=2', headers={'User-Agent' : "Magic Browser"})
